@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MathJax TeX Test Page</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+</head>
+<body>
+В этой работе следует пользоваться функциями высокого уровня. Матрицы хранятся в виде списка списков элементов строк.
+<ol>
+  <li>
+    Напишите функцию, суммирующую две матрицы, заданые на входе.
+  </li>
+  <li>
+    Напишите функцию, которая проверяет неотрицательность всех элементов матрицы.
+  </li>
+  <li>
+    Напишите функцию, которая проверяет, что заданная на входе матрица — нижнетреугольная, т.е. $\forall i,j\ (i < j \Rightarrow a_{ij} = 0)$.
+  </li>
+  <li>
+    Говорят, что квадратная матрица $A=(a_{ij})_{n\times n}$ обладает свойством <b>диагонального преобладания</b>, если 
+    $$
+        |a_{ii}|\geqslant\sum\limits_{j\ne i}\, |a_{ij}|, \quad (i=1,\ldots,n),
+    $$
+    причем хотя бы одно неравенство является строгим.<br/>
+    Напишите функцию, которая проверяет заданную на входе матрицу на обладание этим свойством.
+  </li>
+  <li>
+    По заданному натуральному $n$ сгенерировать матрицу
+    $$
+    \left(\begin{array}{ccccc}
+    1&2&\ldots&n-2&n-1\\
+    n-1&1&\ldots&n-3&n-2\\
+    \dots&\dots&\dots&\dots&\dots\\
+    2&3&\ldots&n-1&1
+    \end{array}
+    \right)
+    $$
+  </li>
+  <li>
+    Напишите функцию, которая подсчитывает количество нулевых строчек матрицы, заданной на входе.
+  </li>
+</ol>
+</body>
+</html>
